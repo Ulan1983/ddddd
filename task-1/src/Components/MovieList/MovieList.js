@@ -8,7 +8,6 @@ class MovieList extends Component {
 	}
 
 	render() {
-		console.log('render movieList');
 		return (
 			<div className="movie_list">
 				<input className="movie_list_inp" type="text" value={this.props.text} onChange={this.props.changeMovie}/>
