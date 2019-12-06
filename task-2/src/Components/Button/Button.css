@@ -1,0 +1,12 @@
+.btn {
+	border: 1px solid firebrick;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	background: firebrick;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin-top: 50px;
+}
