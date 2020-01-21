@@ -9,6 +9,14 @@ class Jokes extends Component {
 	};
 
 	componentDidMount() {
+		this.requestJoke();
+	}
+
+	updateJoke = () => {
+		this.requestJoke();
+	};
+
+	requestJoke = () => {
 		const url = 'https://api.chucknorris.io/jokes/random';
 		fetch(url).then(response => {
 			if (response.ok) {
@@ -20,10 +28,6 @@ class Jokes extends Component {
 
 			this.setState({jokeText: jokeValue});
 		}).catch(error => console.error(error));
-	}
-
-	updateJoke = () => {
-		this.componentDidMount();
 	};
 
 	render() {
